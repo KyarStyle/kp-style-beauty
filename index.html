@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KP-STYLE: Servicios profesionales de belleza y estética en Lima. Tratamientos faciales, manicure, maquillaje y más. Reserva ahora.">
+    <title>KP-STYLE | Tu Centro de Belleza y Estética Profesional</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header con Navegación Fija -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="KP-STYLE Logo">
+                <span>KP-STYLE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()" aria-label="Abrir menú móvil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="images/video.mp4" type="video/mp4">
+            Tu navegador no soporta el video en HTML5.
+        </video>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">Bienvenido a <span>KP-STYLE</span></h1>
+            <p class="fade-in-up delay-1">Tu centro de belleza profesional donde la elegancia y el cuidado se unen. Descubre tratamientos personalizados para realzar tu belleza natural.</p>
+            <a href="#contacto" class="cta-btn fade-in-up delay-2">Reserva Tu Cita</a>
+        </div>
+    </section>
+
+    <!-- Contador de Estadísticas -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-target="100">0</div>
+                    <p>Clientas Felices</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-number" data-target="500">0</div>
+                    <p>Servicios Realizados</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-number" data-target="2">0</div>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <div class="stat-number" data-target="98">0</div>
+                    <p>% Satisfacción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros scroll-reveal">
+        <div class="container">
+            <h2>KP STYLE 💅 - TU ESTILO, TU ESENCIA</h2>
+            <p>En KP-STYLE nos apasiona resaltar tu belleza natural con un toque de elegancia y dedicación. 💅
+Somos especialistas en manicura, pedicura, pestañas y más servicios personalizados que cuidan cada detalle de tu estilo.
+Nuestro objetivo es que disfrutes una experiencia única, relajante y con resultados impecables. 🌸</p>
+            <a href="#servicios" class="cta-btn secondary">Conoce Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="scroll-reveal">Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/pestañas.jpg" alt="Pestañas 1x1">
+                    <h3>Pestañas 1x1</h3>
+                    <p>Extensiones naturales y ligeras que realzan tu mirada con elegancia.</p>
+                    <div class="precio-tag">S/25</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/gelsemipermanente.jpg" alt="Manicure Gel">
+                    <h3>Manicure en gel semipermanente</h3>
+                    <p>Brillo impecable y color duradero que mantiene tus uñas perfectas por más tiempo.</p>
+                    <div class="precio-tag">S/25</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/geldiseño.jpg" alt="Manicure con Diseño">
+                    <h3>Manicure en gel con diseño</h3>
+                    <p>Creatividad y estilo únicos en cada detalle, con diseños personalizados y elegantes.</p>
+                    <div class="precio-tag">Desde S/30</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/rubber.jpg" alt="Manicure Rubber">
+                    <h3>Manicure en rubber</h3>
+                    <p>Fortalecimiento y protección para tus uñas con un acabado natural y resistente.</p>
+                    <div class="precio-tag">Desde S/40</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/diseño.jpg" alt="Manicure Soft Gel">
+                    <h3>Manicure en soft gel</h3>
+                    <p>Diseños personalizados y cuidado de uñas con esmaltes duraderos.</p>
+                    <div class="precio-tag">Desde S/40</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/pedicura.jpg" alt="Pedicura">
+                    <h3>Pedicura en gel</h3>
+                    <p>Relajación y belleza para tus pies con acabado suave, limpio y duradero.</p>
+                    <div class="precio-tag">Desde S/35</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/sonia.jpg" alt="Maquillaje">
+                    <h3>Maquillaje Profesional</h3>
+                    <p>Maquillaje para eventos, diario o correctivo, adaptado a tu rostro.</p>
+                    <div class="precio-tag">Desde S/40</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/peinado.jpg" alt="Peinados">
+                    <h3>Peinados</h3>
+                    <p>Estilos modernos y personalizados que se adaptan a tu ocasión y personalidad.</p>
+                    <div class="precio-tag">Desde S/30</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/henna.jpg" alt="Henna">
+                    <h3>Henna</h3>
+                    <p>Color intenso y definido con pigmentos naturales que resaltan tu belleza.</p>
+                    <div class="precio-tag">S/20</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+                <div class="servicio-card scroll-reveal">
+                    <img src="images/planchado.jpg" alt="Planchado">
+                    <h3>Planchado</h3>
+                    <p>Cabello liso, brillante y sedoso con resultados que realzan tu estilo natural.</p>
+                    <div class="precio-tag">S/20</div>
+                    <a href="#contacto" class="cta-btn">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Trabajos -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2 class="scroll-reveal">Galería de Nuestros Trabajos</h2>
+            <p class="scroll-reveal">Descubre los increíbles resultados que logramos con nuestras clientas</p>
+            <div class="galeria-grid">
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(0)">
+                    <img src="images/pestañas.jpg" alt="Trabajo 1">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(1)">
+                    <img src="images/gelsemipermanente.jpg" alt="Trabajo 2">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(2)">
+                    <img src="images/geldiseño.jpg" alt="Trabajo 3">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(3)">
+                    <img src="images/rubber.jpg" alt="Trabajo 4">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(4)">
+                    <img src="images/diseño.jpg" alt="Trabajo 5">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(5)">
+                    <img src="images/pedicura.jpg" alt="Trabajo 6">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(6)">
+                    <img src="images/trabajo7.jpg" alt="Trabajo 7">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(7)">
+                    <img src="images/trabajo8.jpg" alt="Trabajo 8">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(8)">
+                    <img src="images/trabajo9.jpg" alt="Trabajo 9">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item scroll-reveal" onclick="openLightbox(9)">
+                    <img src="images/trabajo10.jpg" alt="Trabajo 10">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+        <a class="lightbox-prev" onclick="changeLightbox(-1)">&#10094;</a>
+        <a class="lightbox-next" onclick="changeLightbox(1)">&#10095;</a>
+    </div>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2 class="scroll-reveal">Lo Que Dicen Nuestras Clientas</h2>
+            <div class="testimonios-carousel">
+                <div class="testimonio-card active">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Increíble servicio! Mis uñas quedaron hermosas y el trato fue excepcional. 100% recomendado!"</p>
+                    <h4>- María González</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"El mejor lugar para consentirte. Las pestañas 1x1 son perfectas y duran muchísimo tiempo."</p>
+                    <h4>- Ana Rodríguez</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Me encanta venir aquí! Siempre salgo feliz y luciendo espectacular. Son las mejores!"</p>
+                    <h4>- Lucía Pérez</h4>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentTestimonio(0)"></span>
+                <span class="dot" onclick="currentTestimonio(1)"></span>
+                <span class="dot" onclick="currentTestimonio(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOCIONES MEJORADAS -->
+    <section id="promociones" class="promociones">
+        <div class="container">
+            <h2 class="scroll-reveal">🎉 Nuestras Promociones</h2>
+            <p class="subtitle scroll-reveal">Elige hasta 2 servicios y obtén <strong>8% de descuento automático</strong></p>
+
+            <div class="promociones-wrapper">
+                <!-- Grid de servicios -->
+                <div class="promociones-grid" id="promociones-grid">
+                    <!-- Los servicios se generan dinámicamente con JavaScript -->
+                </div>
+
+                <!-- Resumen sticky MEJORADO -->
+                <div class="resumen-sticky empty" id="resumen-promocion">
+                    <div class="resumen-header">
+                        <i class="fas fa-gift"></i>
+                        <h3>Tu Promoción</h3>
+                        <span class="contador-servicios">
+                            <span id="contador-servicios">0</span>/2 servicios
+                        </span>
+                    </div>
+
+                    <div id="contenido-resumen-promocion">
+                        <div class="mensaje-vacio">
+                            <i class="fas fa-hand-pointer"></i>
+                            <p>Selecciona tus servicios favoritos para ver tu promoción</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-reservar-promocion" id="btn-reservar-promocion" disabled>
+                        Selecciona servicios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="scroll-reveal">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuánto dura el gel semipermanente?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El gel semipermanente tiene una duración aproximada de 2 a 3 semanas, dependiendo del cuidado y el crecimiento de tus uñas.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Necesito cita previa?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, recomendamos agendar tu cita con anticipación para garantizar tu horario preferido. Puedes reservar por WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Qué métodos de pago aceptan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, yape.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuetan con Promociones?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con grandes promociones que podras encontrar en la sección correspondiente , no dudes en consultar ya !.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-reveal">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuál es el horario de atención?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestro horario es de lunes a domingo de 11:00 AM a 8:00 PM. ¡Te esperamos!, para reservas mas temprano , agendar via whatsapp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="scroll-reveal">¡Agenda Tu Cita!</h2>
+            <div class="contact-item scroll-reveal">
+                <h3>AQUÍ SOLICITA TU SERVICIO Y AGENDA TU CITA! 💖</h3>
+            </div>
+            <form id="contact-form" class="contact-form scroll-reveal">
+                <label for="nombre">Tu Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                
+                <label for="servicio">Tu Servicio</label>
+                <select id="servicio" required>
+                    <option value="">Elige un servicio</option>
+                    <option value="Pestañas">Pestañas 1x1</option>
+                    <option value="Manicure">Manicure</option>
+                    <option value="Pedicure">Pedicure</option>
+                    <option value="Maquillaje Profesional">Maquillaje Profesional</option>
+                    <option value="Peinados">Peinados</option>
+                    <option value="Henna">Henna</option>
+                    <option value="Planchado">Planchado</option>
+                </select>
+                
+                <label for="especificacion">Especificación del Servicio</label>
+                <textarea id="especificacion" placeholder="Detalla tu solicitud (fecha preferida, preferencias, etc.)" rows="5" required></textarea>
+                
+                <button type="submit" class="cta-btn">AGENDA TU CITA</button>
+            </form>
+            <p id="form-message"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#privacidad">Política de Privacidad</a>
+                <a href="#terminos">Términos y Condiciones</a>
+                <a href="#horarios">Horarios: 11am a 8pm</a>
+            </div>
+            <p>&copy; 2025 KP-STYLE. Todos los derechos reservados. | Desarrollado con profesionalismo.</p>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/51922358283?text=Hola%20KP-Style,%20quiero%20información" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot-container minimized">
+        <div class="chatbot-header" onclick="toggleChatbot()">
+            <i class="fas fa-comment-dots"></i>
+            <span>Asistente Virtual</span>
+            <i class="fas fa-chevron-down chatbot-toggle"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="bot-message">
+                    <p>¡Hola! 👋 Soy la asistente virtual de KP-STYLE. ¿En qué puedo ayudarte?</p>
+                </div>
+                <div class="bot-message">
+                    <div class="quick-replies">
+                        <button onclick="sendBotMessage('Precios')">💰 Precios</button>
+                        <button onclick="sendBotMessage('Horarios')">🕐 Horarios</button>
+                        <button onclick="sendBotMessage('Ubicación')">📍 Ubicación</button>
+                        <button onclick="sendBotMessage('Promociones')">🎁 Promociones</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-user-input" placeholder="Escribe tu mensaje...">
+                <button onclick="handleUserMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Popup -->
+    <div id="exit-popup" class="exit-popup">
+        <div class="exit-popup-content">
+            <span class="exit-popup-close" onclick="closeExitPopup()">&times;</span>
+            <h2>¡Espera! 🎉</h2>
+            <p>¡No te vayas sin tu descuento exclusivo!</p>
+            <h3>15% OFF</h3>
+            <p>En tu primera cita</p>
+            <p class="promo-code">Código: <strong>PRIMERAVEZ15</strong></p>
+            <a href="#contacto" class="cta-btn" onclick="closeExitPopup()">Reservar Ahora</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
